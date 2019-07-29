@@ -7,36 +7,22 @@ var moment = require("moment");
 var fs = require("fs");
 
 
-// var option = process.argv[2]
-// var search = process.argv.slice(3).join(" ");
+var option = process.argv[2]
+var search = process.argv.slice(3).join(" ");
 
-// if (option === 'concert-this') {
-//     findConcert();
-// }
-
-// if (option === 'spotify-this-song') {
-//     findSong();
-// }
-
-// if (option === 'movie-this') {
-//     findMovie();
-// }
-
-// if (option === 'do-what-it-says') {
-//     doOption();
-// }
-
-switch(command){
-    case 'concert-this': 
+if (option === 'concert-this') {
     findConcert();
+}
 
-    case 'spotify-this-song':
+if (option === 'spotify-this-song') {
     findSong();
+}
 
-    case 'movie-this':
+if (option === 'movie-this') {
     findMovie();
+}
 
-    case 'do-what-it-says':
+if (option === 'do-what-it-says') {
     doOption();
 }
 
